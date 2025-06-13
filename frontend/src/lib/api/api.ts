@@ -26,25 +26,25 @@ import { BASE_PATH, COLLECTION_FORMATS, BaseAPI, RequiredError, operationServerM
 /**
  * 
  * @export
- * @interface GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo
+ * @interface GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo
  */
-export interface GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo {
+export interface GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo {
     /**
      * 
      * @type {boolean}
-     * @memberof GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo
+     * @memberof GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo
      */
     'completed'?: boolean;
     /**
      * 
      * @type {number}
-     * @memberof GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo
+     * @memberof GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo
      */
     'id'?: number;
     /**
      * 
      * @type {string}
-     * @memberof GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo
+     * @memberof GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo
      */
     'title'?: string;
 }
@@ -89,11 +89,11 @@ export const TodosApiAxiosParamCreator = function (configuration?: Configuration
          * Update a todo\'s completion status
          * @summary Update a todo
          * @param {number} id Todo ID
-         * @param {GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo} todo Todo object
+         * @param {GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo} todo Todo object
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiTodosIdPut: async (id: number, todo: GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        apiTodosIdPut: async (id: number, todo: GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'id' is not null or undefined
             assertParamExists('apiTodosIdPut', 'id', id)
             // verify required parameter 'todo' is not null or undefined
@@ -128,11 +128,11 @@ export const TodosApiAxiosParamCreator = function (configuration?: Configuration
         /**
          * Create a new todo item with the provided title
          * @summary Create a new todo
-         * @param {GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo} todo Todo object
+         * @param {GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo} todo Todo object
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiTodosPost: async (todo: GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        apiTodosPost: async (todo: GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'todo' is not null or undefined
             assertParamExists('apiTodosPost', 'todo', todo)
             const localVarPath = `/api/todos`;
@@ -177,7 +177,7 @@ export const TodosApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async apiTodosGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo>>> {
+        async apiTodosGet(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.apiTodosGet(options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['TodosApi.apiTodosGet']?.[localVarOperationServerIndex]?.url;
@@ -187,11 +187,11 @@ export const TodosApiFp = function(configuration?: Configuration) {
          * Update a todo\'s completion status
          * @summary Update a todo
          * @param {number} id Todo ID
-         * @param {GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo} todo Todo object
+         * @param {GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo} todo Todo object
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async apiTodosIdPut(id: number, todo: GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo>> {
+        async apiTodosIdPut(id: number, todo: GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.apiTodosIdPut(id, todo, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['TodosApi.apiTodosIdPut']?.[localVarOperationServerIndex]?.url;
@@ -200,11 +200,11 @@ export const TodosApiFp = function(configuration?: Configuration) {
         /**
          * Create a new todo item with the provided title
          * @summary Create a new todo
-         * @param {GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo} todo Todo object
+         * @param {GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo} todo Todo object
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async apiTodosPost(todo: GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo>> {
+        async apiTodosPost(todo: GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.apiTodosPost(todo, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['TodosApi.apiTodosPost']?.[localVarOperationServerIndex]?.url;
@@ -226,28 +226,28 @@ export const TodosApiFactory = function (configuration?: Configuration, basePath
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiTodosGet(options?: RawAxiosRequestConfig): AxiosPromise<Array<GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo>> {
+        apiTodosGet(options?: RawAxiosRequestConfig): AxiosPromise<Array<GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo>> {
             return localVarFp.apiTodosGet(options).then((request) => request(axios, basePath));
         },
         /**
          * Update a todo\'s completion status
          * @summary Update a todo
          * @param {number} id Todo ID
-         * @param {GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo} todo Todo object
+         * @param {GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo} todo Todo object
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiTodosIdPut(id: number, todo: GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig): AxiosPromise<GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo> {
+        apiTodosIdPut(id: number, todo: GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig): AxiosPromise<GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo> {
             return localVarFp.apiTodosIdPut(id, todo, options).then((request) => request(axios, basePath));
         },
         /**
          * Create a new todo item with the provided title
          * @summary Create a new todo
-         * @param {GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo} todo Todo object
+         * @param {GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo} todo Todo object
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        apiTodosPost(todo: GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig): AxiosPromise<GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo> {
+        apiTodosPost(todo: GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig): AxiosPromise<GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo> {
             return localVarFp.apiTodosPost(todo, options).then((request) => request(axios, basePath));
         },
     };
@@ -275,24 +275,24 @@ export class TodosApi extends BaseAPI {
      * Update a todo\'s completion status
      * @summary Update a todo
      * @param {number} id Todo ID
-     * @param {GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo} todo Todo object
+     * @param {GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo} todo Todo object
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TodosApi
      */
-    public apiTodosIdPut(id: number, todo: GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig) {
+    public apiTodosIdPut(id: number, todo: GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig) {
         return TodosApiFp(this.configuration).apiTodosIdPut(id, todo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * Create a new todo item with the provided title
      * @summary Create a new todo
-     * @param {GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo} todo Todo object
+     * @param {GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo} todo Todo object
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof TodosApi
      */
-    public apiTodosPost(todo: GithubComDunstormMySvelteGoTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig) {
+    public apiTodosPost(todo: GithubComDunstormSveltekitGolangStarterTemplateBackendInternalModelsTodo, options?: RawAxiosRequestConfig) {
         return TodosApiFp(this.configuration).apiTodosPost(todo, options).then((request) => request(this.axios, this.basePath));
     }
 }

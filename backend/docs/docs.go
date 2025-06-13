@@ -35,7 +35,7 @@ const docTemplate = `{
                         "schema": {
                             "type": "array",
                             "items": {
-                                "$ref": "#/definitions/github_com_dunstorm_my-svelte-go-template_backend_internal_models.Todo"
+                                "$ref": "#/definitions/github_com_dunstorm_sveltekit-golang-starter-template_backend_internal_models.Todo"
                             }
                         }
                     }
@@ -60,7 +60,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_dunstorm_my-svelte-go-template_backend_internal_models.Todo"
+                            "$ref": "#/definitions/github_com_dunstorm_sveltekit-golang-starter-template_backend_internal_models.Todo"
                         }
                     }
                 ],
@@ -68,7 +68,7 @@ const docTemplate = `{
                     "201": {
                         "description": "Created",
                         "schema": {
-                            "$ref": "#/definitions/github_com_dunstorm_my-svelte-go-template_backend_internal_models.Todo"
+                            "$ref": "#/definitions/github_com_dunstorm_sveltekit-golang-starter-template_backend_internal_models.Todo"
                         }
                     }
                 }
@@ -101,7 +101,7 @@ const docTemplate = `{
                         "in": "body",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/github_com_dunstorm_my-svelte-go-template_backend_internal_models.Todo"
+                            "$ref": "#/definitions/github_com_dunstorm_sveltekit-golang-starter-template_backend_internal_models.Todo"
                         }
                     }
                 ],
@@ -109,7 +109,7 @@ const docTemplate = `{
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/github_com_dunstorm_my-svelte-go-template_backend_internal_models.Todo"
+                            "$ref": "#/definitions/github_com_dunstorm_sveltekit-golang-starter-template_backend_internal_models.Todo"
                         }
                     }
                 }
@@ -117,7 +117,7 @@ const docTemplate = `{
         }
     },
     "definitions": {
-        "github_com_dunstorm_my-svelte-go-template_backend_internal_models.Todo": {
+        "github_com_dunstorm_sveltekit-golang-starter-template_backend_internal_models.Todo": {
             "type": "object",
             "properties": {
                 "completed": {
